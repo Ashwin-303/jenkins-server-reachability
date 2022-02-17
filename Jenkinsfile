@@ -60,10 +60,12 @@ pipeline {
                     steps {
                         script
                             { 
-                                datas = readYaml (file: 'manifest.yml') 
+                                datas = readYaml (file: 'sample.yaml') 
                             }
                                 echo datas.ear_file.deploy.toString()
                     }
+
+                }
        
 
             }
